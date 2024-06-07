@@ -1,0 +1,39 @@
+header {
+    position: absolute;
+    background-color: var(--second-color);
+    margin: 0.7rem;
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    width: 99%;
+    z-index: 2022;
+} 
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .logo{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 0.3rem;
+    border-radius: 3rem;
+}
+
+header .container nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container nav .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container nav .menu li{
+    margin-right: 4.8rem;
+}
+

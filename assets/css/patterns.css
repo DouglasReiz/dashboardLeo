@@ -1,0 +1,30 @@
+:root{
+    --primary-color: #4154fd;
+    --second-color: #0060dd;
+    --black-color: #000000;
+    --black-color-medium: #141414;
+    --semi-black: #1e1e1e;
+    --white-color: #ffffff;
+    --white-color-alpha: rgba(255,255,255,0.8);
+}
+
+.container{
+    width: 100%;
+    max-width: 1246px;
+    margin: 0 auto;
+    padding: 0rem 1.5rem;
+}
+
+.container-fluid{
+    width: 100%;
+    padding: 0rem 1.8rem;
+}
+
+.menu-item{
+    display: inline-block;
+    color: var(--black-color);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    line-height: 2.4rem;
+}
+ 
