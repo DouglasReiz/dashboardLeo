@@ -6,8 +6,9 @@ header {
     border-radius: 0.4rem;
     width: 99%;
     z-index: 2022;
-} 
+}
 
+/* Estilização do container do header */
 header .container{
     display: flex;
     align-items: center;
@@ -21,19 +22,34 @@ header .container .logo{
     border-radius: 3rem;
 }
 
+/* Raiz de navegação */
 header .container nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* Menu de navegação */
 header .container nav .menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* lista do menu */
 header .container nav .menu li{
     margin-right: 4.8rem;
+    transition: all 0.2s;
 }
 
+/* Animação dos itens no header */
+header .container nav .menu li:hover{
+    color: green;
+    transform: translateY(-8%);
+}
+
+/* 
+
+ENTRANDO NA SEÇÃO PRINCIPAL
+
+*/

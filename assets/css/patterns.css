@@ -27,4 +27,7 @@
     font-weight: 700;
     line-height: 2.4rem;
 }
- 
+
+.menu-item:hover{
+    color: var(--white-color);
+}
