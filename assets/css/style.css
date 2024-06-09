@@ -15,6 +15,11 @@ header .container{
     justify-content: space-between;
 }
 
+/* Estilo para o menu hamburguer */
+header .hamburger-menu {
+    display: none; /* Esconde o menu hamburguer por padrão */
+  }
+
 header .container .logo{
     color: var(--black-color);
     border-radius: 3rem;
