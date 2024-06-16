@@ -65,6 +65,31 @@
     
     header .menu li {
         display: block;
-        margin: 10px 0;
+        margin: 0.6 0;
     }
+
+    .s-hero .water{
+        display: none;
+    }
+
+    .s-hero .container{
+        background-color: rgb(235, 235, 235);
+    }
+
+    .s-hero .container .title-box{
+        margin-top: 7rem;
+    }
+
+    .s-hero .container .title-box h1{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .s-hero .container .title-box h2{
+        margin-top: 3rem;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+
 }
