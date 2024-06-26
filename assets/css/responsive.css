@@ -116,4 +116,32 @@
     }
 
 
+    .s-about .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .s-about .container .history h2{
+        font-weight: 900;
+        font-size: 4rem;
+    }
+    
+    .s-about .container .history p{
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        color: var(--semi-black);
+        margin-top: 2.4rem;
+    }
+
+
+    .s-about .container img{
+        margin-top: 6rem;
+        width: auto;
+        height: 20rem;
+        border-radius: 0rem;
+    }
+
 }
