@@ -217,4 +217,35 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     transform: rotate(135deg)
   }
 
+  .s-about {
+    background-color: #d1d1d1;
+    padding: 6rem 0;
+}
 
+.s-about .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+  .s-about .container .history{
+    width: 100%;
+    max-width: 80rem;
+}
+
+.s-about .container .history h2{
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.s-about .container .history p{
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+    color: var(--semi-black);
+    margin-top: 2.4rem;
+}
+
+.s-about .container img{
+    width: 30rem;
+    border-radius: 30rem;
+}
