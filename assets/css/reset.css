@@ -15,6 +15,7 @@ html{
 body{
     font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
+    background: linear-gradient(#6cdaff, #d1d1d1 );
 }
 
 img{
