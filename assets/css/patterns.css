@@ -1,6 +1,6 @@
 :root{
-    --primary-color: #0015ce;
-    --second-color: #0060dd;
+    --primary-color: #055980;
+    --second-color: #0db3c5;
     --black-color: #000000;
     --black-color-medium: #1b1b1b;
     --semi-black: #252525;
@@ -11,7 +11,7 @@
 
 .container{
     width: 100%;
-    max-width: 1246px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0rem 1.5rem;
 }

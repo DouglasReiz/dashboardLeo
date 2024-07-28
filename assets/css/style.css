@@ -1,10 +1,8 @@
 header {
-    position: absolute;
+    position: static;
     background-color: var(--second-color);
-    margin: 0.7rem;
-    padding: 0.3rem;
     border-radius: 0.4rem;
-    width: 99%;
+    width: auto;
     z-index: 2022;
 }
 
@@ -61,15 +59,79 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 
 */
 
-.s-hero {
-    background-color: #6cdaff;
-    /* Cor de fundo */
-    background: linear-gradient(#6aaafd, #6cdaff);
-    overflow: hidden;
-    /* Oculta o overflow do conteúdo */
-    animation: onda 10s infinite linear alternate;
-    /* Animação da onda */
+#content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0px;
 }
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* 50% da altura do viewport */
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    height: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 2s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+
+/* Efeitos de transição */
+.fade {
+    animation: fadeEffect 2s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
 
 .s-hero .container {
     display: flex;
@@ -111,7 +173,6 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 }
 
 .s-hero .container .title-box h2 span {
-    background-color: var(--white-color);
     border-radius: 2rem;
     padding: 0.4rem;
     color: var(--primary-color);
@@ -121,8 +182,6 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 .s-sucess {
     padding: 10rem 0;
     margin: 0 auto;
-    background-color: rgb(196, 196, 196);
-    background: linear-gradient(#6cdaff, #d1d1d1);
 }
 
 .s-sucess .container {
@@ -223,8 +282,139 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     transform: rotate(135deg)
 }
 
+/* Desing tela de serviços */
+
+
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-image {
+    flex: 1;
+    text-align: center;
+}
+
+.service-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.service-text {
+    flex: 2;
+    padding: 20px;
+}
+
+.service-text h4 {
+    margin-top: 0;
+    color: #333;
+}
+
+.service-text p {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        flex-direction: column;
+    }
+
+    .service-item.reverse {
+        flex-direction: column;
+    }
+}
+
+/* Estilo pagina de contato */
+
+.contact-page{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #333;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilo para o botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+
+/* Estilização pagina Sobre nós */
+
 .s-about {
-    background-color: #d1d1d1;
     padding: 6rem 0;
 }
 
@@ -272,8 +462,6 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 .footer ul {
     list-style: none;
 }
-
-
 
 .footer {
     background-color: #24262b;
@@ -343,8 +531,6 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     background-color: #ffffff;
 }
 
-
-
 footer .copy {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 400;
@@ -355,7 +541,7 @@ footer .copy {
     justify-content: center;
 }
 
-footer .copy span{
+footer .copy span {
     font-family: "Playwrite MX", cursive;
     font-optical-sizing: auto;
     font-style: normal;
