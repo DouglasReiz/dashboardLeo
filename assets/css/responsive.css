@@ -24,7 +24,7 @@
     }
 
     header .container .logo {
-        width: 5rem;
+        width: 10rem;
         margin-right: 2rem;
     }
       
@@ -33,7 +33,7 @@
         position: absolute;
         top: 0.625rem;
         right: 0.625rem;
-        font-size: 24px;
+        font-size: 44px;
         background-color: transparent;
         border: none;
         color: #000000;
@@ -67,6 +67,23 @@
         display: block;
         margin: 0.6 0;
     }
+
+    .carousel-item img {
+      height: 180px; /* Reduz a altura da imagem para se ajustar melhor a telas menores */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      padding: 5px; /* Reduz o tamanho dos botões de controle */
+      font-size: 12px; /* Ajusta o tamanho da fonte dos botões de controle */
+  }
+
+  .carousel-container {
+      border-radius: 0; /* Remove os cantos arredondados para melhor aproveitamento do espaço */
+      box-shadow: none; /* Remove a sombra para um visual mais limpo em telas pequenas */
+  }
+
+
 
     /* S-HERO STYLE */
 

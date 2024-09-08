@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
         navigation.classList.toggle('show');
     });
 
-
-    // Carrossel
+    // Seleciona o carrossel
+    const carouselContainer = document.querySelector('.carousel-container');
     const prevButton = document.querySelector('.carousel-control-prev');
     const nextButton = document.querySelector('.carousel-control-next');
     const carouselInner = document.querySelector('.carousel-inner');
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Tempo automático de passagem
-    setInterval(() => {
+    const carouselInterval = setInterval(() => {
         showSlide(currentIndex + 1);
     }, 5000); // 5000ms = 5 segundos
 
@@ -62,11 +62,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function handleHashChange() {
+
+        
+
         const hash = window.location.hash.substring(1);
         if (hash) {
             loadContent(hash);
         } else {
             loadContent('home');
+        }
+
+        // Exibir ou ocultar o carrossel com base na página atual
+        if (hash === 'home' || hash === '') {
+            if (carouselContainer) {
+                
+                carouselContainer.style.display = 'block';
+            }
+            // Reiniciar o carrossel caso ele tenha sido ocultado
+            clearInterval(carouselInterval);
+            setInterval(() => {
+                showSlide(currentIndex + 1);
+            }, 50000);
+        } else {
+            if (carouselContainer) {
+                carouselContainer.style.display = 'none';
+            }
         }
     }
 
@@ -74,5 +94,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Carregar a página inicial
     handleHashChange();
-
 });
