@@ -385,13 +385,31 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 }
 
 .contact-form button:hover {
-    background-color: #555;
+    background-color: var(--second-color);
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
     border-color: #333;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.contact-form .social-links a:hover {
+    color: #24262b;
+    background-color: var(--second-color);
 }
 
 

@@ -69,7 +69,8 @@
     }
 
     .carousel-item img {
-      height: 180px; /* Reduz a altura da imagem para se ajustar melhor a telas menores */
+      max-width: 100%;
+      height: 250px; /* Reduz a altura da imagem para se ajustar melhor a telas menores */
   }
 
   .carousel-control-prev,
