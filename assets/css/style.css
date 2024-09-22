@@ -431,7 +431,6 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 
 .s-about .container .history {
     width: 100%;
-    max-width: 80rem;
 }
 
 .s-about .container .history h2 {
@@ -447,10 +446,10 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     margin-top: 2.4rem;
 }
 
-.s-about .container img {
-    width: 30rem;
-    border-radius: 30rem;
+.s-about .container .history p span{
+    color: var(--second-color);
 }
+
 
 /* Footer Style  */
 
