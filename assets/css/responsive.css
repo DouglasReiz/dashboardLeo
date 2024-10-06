@@ -1,254 +1,284 @@
-@media (max-width: 1200px){
-}
-
-@media (max-width: 991px){
-}
-
-@media (max-width: 768px){
-}
-
-@media (max-width: 600px){
-}
-
-@media (max-width: 480px){
-    header {
-        width: 100%;
-        margin: auto;
-        border-radius: 0%;
-    }
-
-    header .container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    header .container .logo {
-        width: 10rem;
-        margin-right: 2rem;
-    }
-      
-    header .hamburger-menu {
-        display: block;
-        position: absolute;
-        top: 0.625rem;
-        right: 0.625rem;
-        font-size: 44px;
-        background-color: transparent;
-        border: none;
-        color: #000000;
-        cursor: pointer;
-    }
-    
-    header .navigation {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        text-align: center;
-    }
-
-    header .navigation.show { /* Adicionando a classe .show */
-        display: block; /* Exibe o menu de navegação */
-        margin:0.1rem 0rem;
-        padding: 0.6rem;
-        font-size: 1.3rem;
-        max-width: 100%;
-        background-color: var(--second-color);
-        border-radius: 1rem;
-        align-items: center;
-        justify-content: flex-end;
-        z-index: 2023;
-    }
-    
-    header .menu li {
-        display: block;
-        margin: 0.6 0;
-    }
-
-    .carousel-item img {
-      height: 140px; /* Reduz a altura das imagens */
+@media (max-width: 1200px) {
+  .carousel-item img {
+    height: 400px;
+    /* Reduz a altura das imagens */
   }
 
   .carousel-control-prev,
   .carousel-control-next {
-      padding: 5px; /* Diminui o padding dos controles */
+    padding: 5px;
+    /* Diminui o padding dos controles */
   }
 
   .carousel-control-prev {
-      left: 5px; /* Ajusta a posição dos controles */
+    left: 5px;
+    /* Ajusta a posição dos controles */
   }
 
   .carousel-control-next {
-      right: 5px; /* Ajusta a posição dos controles */
+    right: 5px;
+    /* Ajusta a posição dos controles */
+  }
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 600px) {}
+
+@media (max-width: 480px) {
+  header {
+    width: 100%;
+    margin: auto;
+    border-radius: 0%;
+  }
+
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header .container .logo {
+    width: 10rem;
+    margin-right: 2rem;
+  }
+
+  header .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;
+    font-size: 44px;
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  header .navigation {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+  }
+
+  header .navigation.show {
+    /* Adicionando a classe .show */
+    display: block;
+    /* Exibe o menu de navegação */
+    margin: 0.1rem 0rem;
+    padding: 0.6rem;
+    font-size: 1.3rem;
+    max-width: 100%;
+    background-color: var(--second-color);
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2023;
+  }
+
+  header .menu li {
+    display: block;
+    margin: 0.6 0;
+  }
+
+  .carousel-item img {
+    height: 140px;
+    /* Reduz a altura das imagens */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    padding: 5px;
+    /* Diminui o padding dos controles */
+  }
+
+  .carousel-control-prev {
+    left: 5px;
+    /* Ajusta a posição dos controles */
+  }
+
+  .carousel-control-next {
+    right: 5px;
+    /* Ajusta a posição dos controles */
   }
 
 
 
 
-    /* S-HERO STYLE */
+  /* S-HERO STYLE */
 
-    .s-hero .container .title-box{
-        margin-top: 7rem;
+  .s-hero .container .title-box {
+    margin-top: 7rem;
+  }
+
+  .s-hero .container .title-box h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .s-hero .container .title-box h2 {
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+
+  .s-sucess {
+    text-align: center;
+  }
+
+  .s-sucess .container {
+    display: block;
+  }
+
+  .s-sucess .container .title-sucess {
+    padding-top: 0rem;
+    padding-bottom: 16rem;
+  }
+
+  .s-sucess .container .tag {
+    font-size: 2.5rem;
+  }
+
+  .s-sucess .container .gallery {
+    --s: 9rem;
+    /* control the size of the images*/
+  }
+
+  .s-sucess .container .gallery>img {
+    grid-area: 1/2;
+  }
+
+
+  .s-about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .s-about .container .history h2 {
+    font-weight: 900;
+    font-size: 4rem;
+  }
+
+  .s-about .container .history p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: var(--semi-black);
+    margin-top: 2.4rem;
+  }
+
+
+  .s-about .container img {
+    margin-top: 6rem;
+    width: auto;
+    height: 20rem;
+    border-radius: 0rem;
+  }
+
+
+  .footer {
+    background-color: #24262b;
+    padding: 70px 0;
+  }
+
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
+
+  /* Media query para largura máxima de 480px */
+  @media (max-width: 480px) {
+    .footer-col {
+      width: 100%;
+      /* Altera para ocupar 100% da largura disponível */
+      margin-bottom: 30px;
+      /* Adiciona um espaçamento entre colunas */
     }
 
-    .s-hero .container .title-box h1{
-        font-size: 3rem;
-        line-height: 4rem;
+    .footer-col h4 {
+      font-size: 16px;
+      /* Reduz o tamanho da fonte do título */
+      margin-bottom: 25px;
+      /* Ajusta a margem inferior do título */
     }
 
-    .s-hero .container .title-box h2{
-        margin-top: 3rem;
-        font-size: 2rem;
-        line-height: 3rem;
+    .footer-col h4::before {
+      width: 30px;
+      /* Reduz o comprimento da linha abaixo do título */
     }
 
-
-    .s-sucess{
-        text-align:center;
+    .footer-col ul li a {
+      font-size: 14px;
+      /* Reduz o tamanho da fonte dos links */
     }
+  }
 
-    .s-sucess .container{
-        display:block;
-    }
-
-    .s-sucess .container .title-sucess{
-        padding-top: 0rem;
-        padding-bottom: 16rem;
-    }
-
-    .s-sucess .container .tag{
-        font-size: 2.5rem;
-    }
-
-    .s-sucess .container .gallery{
-        --s: 9rem; /* control the size of the images*/
-    }
-
-    .s-sucess .container  .gallery > img{
-        grid-area: 1/2;
-    }
-
-
-    .s-about .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 100%;
-    }
-
-    .s-about .container .history h2{
-        font-weight: 900;
-        font-size: 4rem;
-    }
-    
-    .s-about .container .history p{
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 2.4rem;
-        color: var(--semi-black);
-        margin-top: 2.4rem;
-    }
-
-
-    .s-about .container img{
-        margin-top: 6rem;
-        width: auto;
-        height: 20rem;
-        border-radius: 0rem;
-    }
-
-
-    .footer {
-        background-color: #24262b;
-        padding: 70px 0;
-      }
-      
-      .footer-col {
-        width: 25%;
-        padding: 0 15px;
-      }
-      
-      .footer-col h4 {
-        font-size: 18px;
-        color: #ffffff;
-        text-transform: capitalize;
-        margin-bottom: 35px;
-        font-weight: 500;
-        position: relative;
-      }
-      
-      .footer-col h4::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -10px;
-        background-color: #e91e63;
-        height: 2px;
-        box-sizing: border-box;
-        width: 50px;
-      }
-      
-      .footer-col ul li:not(:last-child) {
-        margin-bottom: 10px;
-      }
-      
-      .footer-col ul li a {
-        font-size: 16px;
-        text-transform: capitalize;
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: 300;
-        color: #bbbbbb;
-        display: block;
-        transition: all 0.3s ease;
-      }
-      
-      .footer-col ul li a:hover {
-        color: #ffffff;
-        padding-left: 8px;
-      }
-      
-      .footer-col .social-links a {
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        background-color: rgba(255, 255, 255, 0.2);
-        margin: 0 10px 10px 0;
-        text-align: center;
-        line-height: 40px;
-        border-radius: 50%;
-        color: #ffffff;
-        transition: all 0.5s ease;
-      }
-      
-      .footer-col .social-links a:hover {
-        color: #24262b;
-        background-color: #ffffff;
-      }
-      
-      /* Media query para largura máxima de 480px */
-      @media (max-width: 480px) {
-        .footer-col {
-          width: 100%; /* Altera para ocupar 100% da largura disponível */
-          margin-bottom: 30px; /* Adiciona um espaçamento entre colunas */
-        }
-      
-        .footer-col h4 {
-          font-size: 16px; /* Reduz o tamanho da fonte do título */
-          margin-bottom: 25px; /* Ajusta a margem inferior do título */
-        }
-      
-        .footer-col h4::before {
-          width: 30px; /* Reduz o comprimento da linha abaixo do título */
-        }
-      
-        .footer-col ul li a {
-          font-size: 14px; /* Reduz o tamanho da fonte dos links */
-        }
-      }
-      
 
 }
