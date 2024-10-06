@@ -28,9 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Remover classes de efeito antigas
         carouselInner.className = 'carousel-inner';
 
-        // Adicionar o efeito fade
-        carouselInner.classList.add('fade');
-
         // Atualizar o slide
         carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
     }

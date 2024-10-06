@@ -69,20 +69,22 @@
     }
 
     .carousel-item img {
-      max-width: 100%;
-      height: 250px; /* Reduz a altura da imagem para se ajustar melhor a telas menores */
+      height: 140px; /* Reduz a altura das imagens */
   }
 
   .carousel-control-prev,
   .carousel-control-next {
-      padding: 5px; /* Reduz o tamanho dos botões de controle */
-      font-size: 12px; /* Ajusta o tamanho da fonte dos botões de controle */
+      padding: 5px; /* Diminui o padding dos controles */
   }
 
-  .carousel-container {
-      border-radius: 0; /* Remove os cantos arredondados para melhor aproveitamento do espaço */
-      box-shadow: none; /* Remove a sombra para um visual mais limpo em telas pequenas */
+  .carousel-control-prev {
+      left: 5px; /* Ajusta a posição dos controles */
   }
+
+  .carousel-control-next {
+      right: 5px; /* Ajusta a posição dos controles */
+  }
+
 
 
 
