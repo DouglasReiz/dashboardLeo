@@ -21,11 +21,74 @@
   }
 }
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+  .carousel-item img {
+    height: 300px;
+    /* Reduz a altura das imagens */
+  }
 
-@media (max-width: 768px) {}
+  .carousel-control-prev,
+  .carousel-control-next {
+    padding: 5px;
+    /* Diminui o padding dos controles */
+  }
 
-@media (max-width: 600px) {}
+  .carousel-control-prev {
+    left: 5px;
+    /* Ajusta a posição dos controles */
+  }
+
+  .carousel-control-next {
+    right: 5px;
+    /* Ajusta a posição dos controles */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+    /* Reduz a altura das imagens */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    padding: 5px;
+    /* Diminui o padding dos controles */
+  }
+
+  .carousel-control-prev {
+    left: 5px;
+    /* Ajusta a posição dos controles */
+  }
+
+  .carousel-control-next {
+    right: 5px;
+    /* Ajusta a posição dos controles */
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-item img {
+    height: 200px;
+    /* Reduz a altura das imagens */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    padding: 5px;
+    /* Diminui o padding dos controles */
+  }
+
+  .carousel-control-prev {
+    left: 5px;
+    /* Ajusta a posição dos controles */
+  }
+
+  .carousel-control-next {
+    right: 5px;
+    /* Ajusta a posição dos controles */
+  }
+}
 
 @media (max-width: 480px) {
   header {
@@ -279,6 +342,4 @@
       /* Reduz o tamanho da fonte dos links */
     }
   }
-
-
 }
