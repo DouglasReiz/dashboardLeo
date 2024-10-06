@@ -22,11 +22,17 @@ header .hamburger-menu {
 
 header .container .logo {
     color: var(--black-color);
-    border-radius: 5rem;
     max-width: 10rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    border: double;
+    border-radius: 2.5rem;
+    border-color: var(--white-color);
+}
+
+header .container .logo img {
+    border-radius: 2rem;
 }
 
 /* Raiz de navegação */
@@ -54,10 +60,8 @@ header .container nav .menu li:hover {
     transform: translateY(-8%);
 }
 
-/* 
-
+/*
 ENTRANDO NA SEÇÃO PRINCIPAL
-
 */
 
 #content {
@@ -88,7 +92,7 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     transition: transform 2s ease-in-out;
 }
 
-.carousel-item img{
+.carousel-item img {
     width: 100%;
     height: 500px;
     object-fit: cover;
@@ -283,8 +287,86 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     transform: rotate(135deg)
 }
 
+.s-sucess .cards {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0rem 1.5rem;
+}
+
+.s-sucess .cards .card {
+    width: 100%;
+    height: 30rem;
+    background-color: var(--second-color);
+    color: var(--black-color);
+    border-radius: 7rem;
+    margin-right: 1.6rem;
+    cursor: pointer;
+    transition: all 0.4s;
+    text-align: center;
+}
+
+.s-sucess .cards .card:hover {
+    filter: brightness(0.9);
+    transform: scale(1.04);
+}
+
+.s-sucess .cards .card .card-title {
+    margin: 5rem 0;
+    padding-right: 9.9rem;
+    padding-left: 1.4rem;
+}
+
+/* Ativo */
+
+.s-sucess .cards .card.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.s-sucess .cards .card .card-title h3 {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 6.4rem;
+    line-height: 7.7rem;
+    margin-bottom: 5.5rem;
+}
+
+.s-sucess .cards .card .card-info {
+    padding-left: 1rem;
+}
+
+.s-sucess .cards .card .card-info p {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 3.1rem;
+    line-height: 3.9rem;
+}
+
+
+
+
 /* Desing tela de serviços */
 
+.s-Service .container .title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 59.2rem;
+    margin-top: 24rem;
+    padding-bottom: 5.8rem;
+}
+
+.container .title-box h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 7.7rem;
+    text-align: center;
+    color: var(--primary-color);
+}
 
 .service-item {
     display: flex;
@@ -314,6 +396,7 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 .service-text {
     flex: 2;
     padding: 20px;
+    font-size: 2rem;
 }
 
 .service-text h4 {
@@ -325,7 +408,7 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     color: #666;
 }
 
-.service-text p span{
+.service-text p span {
     color: var(--primary-color);
 }
 
@@ -341,13 +424,26 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 
 /* Estilo pagina de contato */
 
-.contact-page{
+.s-contact .container {
+    margin-top: 7rem;
+}
+
+.s-contact .container .title-box h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 7.7rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.s-contact .container .contact-page {
     align-items: center;
     justify-content: center;
     margin-bottom: 5rem;
 }
 
-.contact-form {
+.s-contact .container .contact-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -359,12 +455,13 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form label {
+.s-contact .container .contact-form label {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.contact-form input, .contact-form textarea {
+.s-contact .container .contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -372,7 +469,7 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     box-sizing: border-box;
 }
 
-.contact-form button {
+.s-contact .container .contact-form button {
     padding: 10px 20px;
     background-color: #333;
     color: white;
@@ -383,17 +480,18 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     font-weight: bold;
 }
 
-.contact-form button:hover {
+.s-contact .container .contact-form button:hover {
     background-color: var(--second-color);
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
+.s-contact .container .contact-form input:focus,
+.contact-form textarea:focus {
     border-color: #333;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.contact-form .social-links a {
+.s-contact .container .contact-form .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -406,7 +504,7 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     transition: all 0.5s ease;
 }
 
-.contact-form .social-links a:hover {
+.s-contact .container .contact-form .social-links a:hover {
     color: #24262b;
     background-color: var(--second-color);
 }
@@ -438,32 +536,36 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 /* Estilização pagina Sobre nós */
 
 .s-about {
-    padding: 6rem 0;
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .s-about .container {
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
-.s-about .container .history {
+.s-about .container {
     width: 100%;
 }
 
-.s-about .container .history h2 {
+.s-about .container h2 {
+    text-align: center;
     font-weight: 900;
     font-size: 5rem;
 }
 
-.s-about .container .history p {
+.s-about .container p {
+    padding: 0 7rem;
     font-weight: 400;
-    font-size: 2.5rem;
-    line-height: 2.4rem;
+    font-size: 2rem;
+    line-height: 2rem;
     color: var(--semi-black);
     margin-top: 2.4rem;
 }
 
-.s-about .container .history p span{
+.s-about .container p span {
     color: var(--second-color);
 }
 

@@ -89,6 +89,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('hashchange', handleHashChange);
 
-    // Carregar a página inicial
-    handleHashChange();
+
+    
 });
