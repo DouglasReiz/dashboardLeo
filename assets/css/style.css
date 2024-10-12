@@ -78,12 +78,11 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     width: 100%;
     height: auto;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2em 1em -0.7em rgba(0, 0, 0, 0.377);
 }
 
 .carousel-inner {
     display: flex;
-    height: 100%;
 }
 
 .carousel-item {
@@ -376,7 +375,7 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1em 1em -0.7em rgba(0, 0, 0, 0.363);
 }
 
 .service-item.reverse {
@@ -402,10 +401,11 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 .service-text h4 {
     margin-top: 0;
     color: #333;
+    text-align: center;
 }
 
 .service-text p {
-    color: #666;
+    color: #4e4e4e;
 }
 
 .service-text p span {
@@ -475,8 +475,6 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     background-color: var(--second-color);
 }
 
-
-
 .s-contact .container .contact-form .social-links a {
     display: inline-block;
     height: 40px;
@@ -508,7 +506,7 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
+    box-shadow: 1rem 1rem 3px #99999960;
     z-index: 100;
 }
 
@@ -532,9 +530,12 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     align-items: center;
 }
 
-.s-about .container {
-    width: 100%;
+.s-about .container .history{
+    border-top: outset;
+    border-top-color: var(--primary-color);
 }
+
+
 
 .s-about .container h2 {
     text-align: center;
@@ -557,6 +558,11 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 
 
 /* Footer Style  */
+
+.footer{
+    border-top: outset;
+    border-top-color: var(--second-color);
+}
 
 .footer .container {
     max-width: 1170px;
