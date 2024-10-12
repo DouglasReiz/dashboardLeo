@@ -1,8 +1,8 @@
 header {
-    position: static;
+    position: fixed;
     background-color: var(--second-color);
     border-radius: 0.4rem;
-    width: auto;
+    width: 100%;
     z-index: 2022;
 }
 
@@ -291,7 +291,7 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0rem 1.5rem;
+    padding: 0rem;
 }
 
 .s-sucess .cards .card {
@@ -343,6 +343,39 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     line-height: 3.9rem;
 }
 
+
+.client-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    margin-top: 2.3rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.logo-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    margin-top: 2.3rem;
+}
+
+.logos-item img {
+    display: flex;
+    max-width: 100%;
+    height: 100px;
+    transition: all 0.2s;
+}
+
+.client-logos img:hover {
+    transform: translateY(-12%);
+}
 
 
 
@@ -530,7 +563,7 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     align-items: center;
 }
 
-.s-about .container .history{
+.s-about .container .history {
     border-top: outset;
     border-top-color: var(--primary-color);
 }
@@ -559,13 +592,13 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 
 /* Footer Style  */
 
-.footer{
+.footer {
     border-top: outset;
     border-top-color: var(--second-color);
 }
 
 .footer .container {
-    max-width: 1170px;
+    max-width: 100%;
     margin: auto;
     justify-content: space-between;
 }
