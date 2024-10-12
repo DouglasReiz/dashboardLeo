@@ -1,7 +1,4 @@
-header {
-  position: static;
 
-}
 
 @media (max-width: 1200px) {
   .carousel-item img {
@@ -199,6 +196,8 @@ header {
 
   .s-sucess {
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .s-sucess .container {
@@ -225,8 +224,6 @@ header {
 
   .s-sucess .cards {
     margin-top: 15rem;
-    justify-content: center;
-    align-items: center;
     margin-left: 3.5rem;
   }
 
@@ -264,8 +261,31 @@ header {
     line-height: 3rem;
   }
 
+  .client-logos {
+    width: 90%;
+    text-align: center;
+  }
 
+  .logo-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: grid;
+    gap: 2rem;
+    margin-top: 2.3rem;
+  }
 
+  .logos-item img {
+    display: flex;
+    max-width: 80px;
+    height: 100px;
+    transition: all 0.2s;
+  }
+
+  .s-contact .container .title-box h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
 
   .s-about .container {
     display: flex;

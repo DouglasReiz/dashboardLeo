@@ -1,5 +1,5 @@
 header {
-    position: fixed;
+    position: static;
     background-color: var(--second-color);
     border-radius: 0.4rem;
     width: 100%;
@@ -118,21 +118,6 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     right: 10px;
 }
 
-
-/* Efeitos de transição */
-.fade {
-    animation: fadeEffect 2s;
-}
-
-@keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 
 
@@ -345,13 +330,7 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 
 
 .client-logos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 2rem;
-    margin-top: 2.3rem;
+    width: 100%;
     background-color: #f9f9f9;
     text-align: center;
 }
