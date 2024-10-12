@@ -41,3 +41,23 @@
     font-weight: 400;
     text-align: center;
 }
+
+
+input[type="text"],
+input[type="email"],
+textarea{
+    background-color: var(--white-color);
+    border: 0.1rem solid var(--semi-black);
+    border-radius: 0.4rem;
+    width: 100%;
+    padding: 2rem;
+    resize: none;
+    outline: none;
+    transition: all 0.4s;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover{
+    border: 1px solid var(--second-color);
+}

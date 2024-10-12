@@ -450,7 +450,7 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     max-width: 600px;
     margin: 0 auto;
     padding: 30px;
-    background-color: #f9f9f9;
+    background-color: rgba(95, 158, 160, 0.705);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -458,15 +458,6 @@ ENTRANDO NA SEÇÃO PRINCIPAL
 .s-contact .container .contact-form label {
     font-weight: bold;
     margin-bottom: 5px;
-}
-
-.s-contact .container .contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
 }
 
 .s-contact .container .contact-form button {
@@ -484,12 +475,7 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     background-color: var(--second-color);
 }
 
-.s-contact .container .contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #333;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
+
 
 .s-contact .container .contact-form .social-links a {
     display: inline-block;
