@@ -222,15 +222,28 @@
     grid-area: 1/2;
   }
 
+  .cards{
+
+  }
+
+  .cards .container{
+    padding: 0rem 0rem;
+    max-width: 70%;
+    margin: 0;
+    
+  }
+
   .s-sucess .cards {
     margin-top: 15rem;
     margin-left: 3.5rem;
+    margin-right: 0;
+    max-width: 70%;
+
   }
 
   .s-sucess .cards .card {
     width: 23rem;
     height: 20rem;
-    text-align: center;
   }
 
   .s-sucess .cards .card .card-title {
@@ -262,8 +275,8 @@
   }
 
   .client-logos {
-    width: 90%;
     text-align: center;
+    margin-bottom: 2rem;
   }
 
   .logo-grid {
