@@ -331,6 +331,8 @@ ENTRANDO NA SEÇÃO PRINCIPAL
     width: 100%;
     background-color: #f9f9f9;
     text-align: center;
+    border-top: double 3px var(--second-color);
+    border-bottom: double 3px var(--primary-color);
 }
 
 .logo-grid {
