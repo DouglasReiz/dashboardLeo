@@ -230,21 +230,18 @@
 
   .s-sucess .cards {
     margin-top: 15rem;
-    margin-left: 3.5rem;
-    margin-right: 0;
-    max-width: 70%;
+    margin-left: 4.5rem;
+    max-width: 100%;
 
   }
 
   .s-sucess .cards .card {
-    width: 23rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
   }
 
   .s-sucess .cards .card .card-title {
     margin: 5rem 0;
-    padding-right: 0rem;
-    padding-left: 0rem;
   }
 
   /* Ativo */
